@@ -19,8 +19,6 @@ lazy val svc = project
   .settings(playScalaSettings: _*)
   .settings(commonSettings: _*)
   .settings(commonPlaySettings: _*)
-  .settings(apiGeneratorSettings: _*) // Adds client and JSON converters
-  .settings(routesGeneratorSettings: _*)
   .settings(
     version := "1.0-SNAPSHOT"
   )
@@ -31,7 +29,6 @@ lazy val web = project
   .settings(playScalaSettings: _*)
   .settings(commonSettings: _*)
   .settings(commonPlaySettings: _*)
-  .settings(apiGeneratorSettings: _*) // Adds client and JSON converters
   .settings(
     version := "1.0-SNAPSHOT",
     libraryDependencies ++= Seq(
